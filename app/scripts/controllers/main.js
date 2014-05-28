@@ -1,10 +1,7 @@
 'use strict';
 
 angular.module('bughuntApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $firebase, FIREBASE_URL) {
+    var bugsref = new Firebase(FIREBASE_URL + 'bugs');
+    $scope.bugs = $firebase(bugsref);
   });

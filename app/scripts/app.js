@@ -2,11 +2,14 @@
 
 angular
   .module('bughuntApp', [
+    'firebase',
     'ui.router',
     'ngCookies',
     'ngResource',
     'ngSanitize'
   ])
+
+.constant('FIREBASE_URL', 'https://bughunt.firebaseio.com/' )
 
 .config(function ($stateProvider, $urlRouterProvider) {
 

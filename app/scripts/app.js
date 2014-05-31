@@ -24,10 +24,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .state('menu.bug', {
-        url: '/bug',
+      .state('menu.bugadd', {
         templateUrl: 'views/bug_edit.html',
-        controller: 'MainCtrl'
+        controller: 'BugAddCtrl'
       })
       .state('menu.about', {
         url: '/about',

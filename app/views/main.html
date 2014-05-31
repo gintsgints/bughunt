@@ -1,6 +1,7 @@
+<a ui-sref="menu.bugadd" class="btn btn-primary pull-right">Add new bug</a>
 <h1>Bugs</h1>
 <hr/>
 <div ng-repeat="item in bugs | orderByPriority">
-  {{item}}
+  {{item.title}}
 </div>
-
+<br/>

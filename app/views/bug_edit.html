@@ -1,0 +1,15 @@
+<form role="form">
+  <legend>Enter bug details</legend>
+
+  <div class="form-group">
+    <input ng-model="item.title" type="text" class="form-control" id="title" placeholder="Title">
+  </div>
+
+  <div class="form-group">
+    <label for="desc">Description:</label>
+    <textarea ng-model="item.desc" class="form-control" id="desc" rows="3"></textarea>
+  </div>  
+
+  <button type="submit" ng-click="save()" class="btn btn-primary">Submit new issue</button>
+</form>
+</br>

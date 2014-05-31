@@ -10,6 +10,40 @@
     <textarea ng-model="item.desc" class="form-control" id="desc" rows="3"></textarea>
   </div>  
 
+  <div class="form-group">
+    <label for="status">Statuss:</label>
+    <select ng-model="item.status" class="form-control" id="status" placeholder="State of the issue">
+      <option value="ok">Accepted</option>
+      <option value="nok">Refused</option>
+      <option value="unclear">Clarification</option>
+      <option value="todo">ToDo</option>
+      <option value="check">Please check</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="severity">Severity:</label>
+    <select ng-model="item.severity" class="form-control" id="severity" placeholder="How important">
+      <option value=""></option>
+      <option value="prod">Prod not work</option>
+      <option value="todo">Should do as next</option>
+      <option value="take">Take it when free</option>
+      <option value="tohave">Would be nice</option>
+      <option value="note">May be</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="type">Severity:</label>
+    <select ng-model="item.type" class="form-control" id="type"  placeholder="Issue type">
+      <option value=""></option>
+      <option value="bug">Bug</option>
+      <option value="feature">Feature</option>
+      <option value="data">Data</option>
+      <option value="idea">Idea</option>
+    </select>
+  </div>
+
   <button type="submit" ng-click="save()" class="btn btn-primary">Submit new issue</button>
 </form>
 </br>

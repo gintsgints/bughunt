@@ -5,7 +5,7 @@
 angular.module('bughuntApp')
   .controller('BugAddCtrl', function ($scope, $state, $stateParams, $firebase, FIREBASE_URL) {
  
-    $scope.item = {};
+    $scope.item = {'status': 'check'};
 
     $scope.save = function() {
       $scope.item.id = new Date().valueOf();
